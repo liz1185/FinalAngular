@@ -1,1 +1,13 @@
-<p>product works!</p>
+<mat-card>
+    <h2>
+        {{productData.title}}
+        
+    </h2>
+    
+    <img mat-card-image src="{{productData.image}}" alt="" />
+
+<mat-card-actions>
+    <button mat-raised-button color="primary"> Agregar al carrito <mat-icon>shopping_cart</mat-icon></button>
+</mat-card-actions>
+
+</mat-card>

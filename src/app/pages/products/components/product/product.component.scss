@@ -1,0 +1,32 @@
+mat-card {
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    h2 {
+        height: 10px;
+    }
+
+    img {
+    height: 200px;  
+    object-fit: cover;
+    }
+
+    mat-card-actions{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    button{
+        box-sizing: border-box;
+        transition: box-shadow 0.4s ease-in-out;
+        
+
+        &:hover{
+            box-shadow: 0 0 10px pink;
+        }
+    }
+}
