@@ -7,16 +7,13 @@ import { CartService } from 'src/app/services/cart.service';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent implements OnInit {
-  @Input () productData: any;
+  @Input() productData:any;
 
-  constructor(private _cartService:CartService) { }
+  constructor(private _cartService: CartService) { }
 
   ngOnInit(): void {}
 
-  addProductToCart() {
-    this._cartService.addProductToCart(this.productData)
-    console.log(this.productData);
-
-  }
-
+    removeProduct(){
+    this._cartService.revomeProductFromCart(this.productData.id);
+}
 }
