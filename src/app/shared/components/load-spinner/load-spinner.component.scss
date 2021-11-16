@@ -1,0 +1,10 @@
+.spinner{
+    position: fixed;
+    top:0; left: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right,red.85),(rgb(235, 112, 112.45));
+}

@@ -18,6 +18,15 @@ export class ProductsComponent implements OnInit {
   }
 
 
+
+  loading=false;
+
   ngOnInit(): void {}
+
+  setLoading(loadingState:boolean) {
+    this.loading=loadingState;
+
+
+  }
 
 }

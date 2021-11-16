@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { of } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -18,8 +19,13 @@ export class CartService {
     return this.cartProducts;
   }
 
+  getCartLength() {
+    return of(this.cartProducts.length);
+  }
+
   revomeProductFromCart(id: number){
-    this.cartProducts = this.cartProducts.filter(product =>product.id !== id)
+    this.cartProducts = this.cartProducts.filter((product) => product.id !== id);
+    console.log(this.cartProducts);
     
   }
 }
