@@ -1,13 +1,20 @@
 <mat-card>
     <h2>
         {{productData.title}}
-        
+
     </h2>
-    
+
     <img mat-card-image src="{{productData.image}}" alt="" />
 
 <mat-card-actions>
-    <button (click)="addProductToCart()" mat-raised-button color="primary"> 
+  <div>
+    <h2>
+      $ {{productData.price}}
+
+  </h2>
+  </div>
+
+    <button (click)="addProductToCart()" mat-raised-button color="primary">
         Agregar al carrito <mat-icon>shopping_cart</mat-icon></button>
 </mat-card-actions>
 

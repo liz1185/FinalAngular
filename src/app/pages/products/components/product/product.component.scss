@@ -10,24 +10,31 @@ mat-card {
     }
 
     img {
-    height: 200px;  
+      margin-top: 15px;
+    height: 280px;
     object-fit: cover;
     }
+
+div {
+  margin-bottom: 10px;
+}
 
     mat-card-actions{
         text-align: center;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
     button{
         box-sizing: border-box;
-        transition: box-shadow 0.4s ease-in-out;
-        
+        transition: box-shadow 0.2s ease-in-out;
+        margin-bottom: 10px;
+
 
         &:hover{
             box-shadow:0 0  15px pink;
         }
     }
-    
+
 }
