@@ -34,11 +34,11 @@ export class HeaderComponent implements OnInit {
   constructor( private _cartService:CartService) { }
 
   ngOnInit(): void {
-    
+
   }
 
   getCartLength() {
-    this._cartService.getCartLength().subscribe((data ) => (this.cartLength=data));
+   return this._cartService.getCartLength()
 
   }
 

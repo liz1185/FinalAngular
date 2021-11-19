@@ -20,12 +20,12 @@ export class CartService {
   }
 
   getCartLength() {
-    return of(this.cartProducts.length);
+    return this.cartProducts.length;
   }
 
   revomeProductFromCart(id: number){
     this.cartProducts = this.cartProducts.filter((product) => product.id !== id);
     console.log(this.cartProducts);
-    
+
   }
 }

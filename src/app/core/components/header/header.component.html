@@ -6,8 +6,8 @@
     <nav>
         <a mat-button *ngFor="let link of links" routerLink="{{link.path}}">
 
-            <mat-icon 
-            matBadge="{{ cartLength }}" 
+            <mat-icon
+            matBadge="{{ getCartLength()}}"
             matBadgeColor="warn"
             *ngIf="link.isIcon; else text">
                 {{link.desc}}
@@ -16,6 +16,6 @@
             <ng-template #text>
                 {{link.desc}}
             </ng-template>
-        </a>    
-    </nav>    
+        </a>
+    </nav>
 </mat-toolbar>
