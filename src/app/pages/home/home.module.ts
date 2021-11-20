@@ -3,15 +3,23 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './components/home/home.component';
+import {MatCardModule} from '@angular/material/card';
+
+
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+
+
   ],
   imports: [
     CommonModule,
-    HomeRoutingModule
-  ]
+    HomeRoutingModule,
+    MatCardModule,
+
+
+  ],
 })
 export class HomeModule { }
