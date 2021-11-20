@@ -1,1 +1,30 @@
-<p>contact works!</p>
+<h2> Formulario de registro</h2>
+
+<form (submit)="submit()" [formGroup]="registerForm">
+
+  <div class="formulario">
+
+    <div class="datos_formulario">
+
+      <div class="form-group">
+        <label for="username">Nombre</label>
+    <input type="text" class="form-control" formControlName="username">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Contraseña</label>
+    <input type="password" class="form-control" formControlName="password">
+  </div>
+
+</div>
+
+<div class="form-group form-check">
+  <input type="checkbox" class="form-check-input" formControlName="promociones">
+  <label class="form-check-label" for="promociones">Quiero recibir promociones</label>
+</div>
+
+<button type="submit" class="btn btn-sucess">Enviar</button>
+<button type="button" class="btn btn-default" (click)="refrescar()">Refrescar</button>
+</div>
+</form>
+
